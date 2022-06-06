@@ -21,7 +21,7 @@ public class Base {
 		//chrome Driver
 		
 		Properties prop = new Properties();   //create DataDriven Property file
-		FileInputStream fis = new FileInputStream("C:\\Users\\isha.godyal\\workspace\\E2EProject\\src\\main\\java\\Academy\\data.properties");   //give File Path where exactly the data driven file located
+		FileInputStream fis = new FileInputStream("C:\\Users\\isha.godyal\\workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");   //give File Path where exactly the data driven file located
 		
 		prop.load(fis); //load will take fis as a argument and pass fis obj have knowledge of this property
 		String browserName=prop.getProperty("browser"); // goes to data properties file and pulls out the browser to base file
