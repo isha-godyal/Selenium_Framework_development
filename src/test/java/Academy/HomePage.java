@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.LandingPage;
+import pageObjects.LoginPage;
 import resources.Base;
 
 public class HomePage extends Base {
@@ -31,6 +32,11 @@ public class HomePage extends Base {
 		//creating obj to that class and invoke methods of it
 		LandingPage l = new LandingPage(driver);
 		l.getLogin().click();  //similar to driver.findElement(By.css())
+		
+		LoginPage lp = new LoginPage(driver);
+		lp.getEmail().sendKeys("abc@qw.com");
+		lp.getPassword().sendKeys("123456");
+		lp.getLogin().click();
 	}
 
 }
