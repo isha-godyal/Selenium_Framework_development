@@ -9,8 +9,11 @@ public class LandingPage {
 	public WebDriver driver;
 	
 	//Objects are defined at the top
-	By signin=By.cssSelector("a[href*='sign_in']");
-	By title=By.cssSelector(".text-centre>h2");
+//	By signin=By.cssSelector("a[href*='sign_in']");
+	By signin=By.xpath("//a[contains(@href,'sign_in')]");
+	
+//	By title=By.cssSelector(".text-centre>h2");
+	By title=By.xpath("//*[@id=\"content\"]/div/div[@class='text-center']");
 	By NavBar=By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
 	
 	//constructor

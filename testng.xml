@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <!-- add the test classes which you want to run -->
+      <class name="Academy.AppTest"/>
+      <class name="Academy.ValidateNavigationBar"/>
+      <class name="Academy.ValidateTitle"/>
+      <class name="Academy.HomePage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+<!-- run with cmd line from project location
+mvn compile
+
+mvn test-->
