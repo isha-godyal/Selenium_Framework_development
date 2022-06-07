@@ -20,8 +20,7 @@ public class HomePage extends Base {
 		
 		driver = initializeDriver(); // invoke a method to initialize driver
 		
-		driver.get("https://qaclickacademy.com");
-
+		driver.get(prop.getProperty("url"));
 		// for Model
 		WebElement popupcloseEl = driver.findElement(By.xpath(
 				"//div[contains(@class, 'sumome-react-wysiwyg-close-button')]//div[@class='sumome-react-wysiwyg-move-handle']"));

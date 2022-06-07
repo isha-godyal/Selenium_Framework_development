@@ -10,6 +10,8 @@ public class LandingPage {
 	
 	//Objects are defined at the top
 	By signin=By.cssSelector("a[href*='sign_in']");
+	By title=By.cssSelector(".text-centre>h2");
+	By NavBar=By.cssSelector(".nav.navbar-nav.navbar-right>li>a");
 	
 	//constructor
 	public LandingPage(WebDriver driver) {
@@ -23,5 +25,15 @@ public class LandingPage {
 	public WebElement getLogin()
 	{
 		return driver.findElement(signin);
+	}
+	
+	public WebElement getTitle()
+	{
+		return driver.findElement(title);
+	}
+	
+	public WebElement getNavigationBar()
+	{
+		return driver.findElement(NavBar);
 	}
 }
